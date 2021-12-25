@@ -8,7 +8,7 @@ const SportPages = () => {
   return (
     <div className="containerFirstpage">
       <div className="container">
-        <QuestionSlider QuestionsData={QuestionsData} type="animals"/>
+        <QuestionSlider QuestionsData={QuestionsData} type="sports"/>
     </div>
     </div>
   );

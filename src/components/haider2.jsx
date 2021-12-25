@@ -1,3 +1,4 @@
+// this hhaider that I use it in the qeustions pages like scienecs and sport and history
 import react from 'react';
 import '../styles/App.scss';
 const Haider2 = ({length, current, correctAnsewrNum, type}) => {
