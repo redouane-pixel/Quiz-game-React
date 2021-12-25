@@ -9,6 +9,7 @@ const HistoryPage = () => {
     <div className="containerFirstpage">
       <div className="container">
         <QuestionSlider QuestionsData={QuestionsData} type="history"/>
+        {/* <h1>hello world</h1> */}
     </div>
     </div>
   );
