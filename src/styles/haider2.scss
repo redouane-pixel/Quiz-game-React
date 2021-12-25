@@ -1,0 +1,67 @@
+.haider2 {
+  width: 100%;
+  height: 70px;
+  background-color: $PrimaryColor;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  .smallLogo {
+    width: 13%;
+    height: 100%;
+    background-color: white;
+    font-size: 26px;
+    font-weight: 400;
+    color: $PrimaryColor;
+    display: table;
+    text-align: center;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    span {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+  .informationBlock {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    .correctAwensers {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      border-right: 3px solid white;
+      padding-right: 20px;
+    }
+    .numQuestion {
+      font-size: 30px;
+      font-weight: 400;
+      color: $PrimaryColor;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      margin-left: -60px;
+      margin-right: -60px;
+      margin-top: -10px;
+    }
+    .quizType {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      color: white;
+      border-left: 3px solid white;
+      padding-left: 20px;
+    }
+  }
+  //   the role of this div is just to make space when we put jusetify content space between
+  .withoutRole {
+    width: 15%;
+    height: 100%;
+  }
+}

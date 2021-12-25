@@ -1,0 +1,135 @@
+.slider {
+  width: 90%;
+  height: 85%;
+  margin: auto;
+  .testBlock {
+    background-color: rgba(255, 212, 21, 0.438) 5%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    .question {
+      width: 80%;
+      height: 80px;
+      // background-color: rgb(255, 255, 255);
+      background-color: white;
+      border: 2px solid black;
+      z-index: 1;
+      margin: auto;
+      font-size: 35px;
+      font-weight: 400;
+      color: rgb(0, 0, 0);
+      padding-left: 20px;
+      padding-top: 1rem;
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    }
+    .choicesPart {
+      width: 82%;
+      height: 370px;
+      z-index: 1;
+      margin: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .choice {
+        width: 30%;
+        height: 100%;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid black;
+        cursor: pointer;
+        .Image {
+          width: 100%;
+          height: 50%;
+          border-bottom: 2px solid black;
+        }
+        .NoImage {
+          width: 100%;
+          height: 50%;
+          border-bottom: 2px solid black;
+          background-color: #c4c4c4;
+          font-size: 30px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          .imageIcon {
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .answer {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 35px;
+          line-height: 59px;
+          color: black;
+          margin-top: 40px;
+        }
+      }
+      .trueAwnser {
+        background-color: $PrimaryColor;
+        .answer {
+          color: whitesmoke;
+        }
+        .Image {
+          border-bottom: 2px solid whitesmoke;
+        }
+      }
+      .falseAwnser {
+        background-color: #ff9797;
+        border: 2px solid #ff9797;
+        transition: 1s ease;
+        .answer {
+          color: whitesmoke;
+        }
+        .Image {
+          border-bottom: 2px solid whitesmoke;
+        }
+      }
+    }
+    .Skip-btn {
+      width: 100px;
+      height: 30px;
+      background-color: whitesmoke;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      font-size: 20px;
+      align-items: center;
+      margin-left: auto;
+      margin-top: 10px;
+      transition: 1s ease-out;
+      box-shadow: inset 0 0 0 0 $PrimaryColor;
+      outline: none;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      &:hover {
+        // box-shadow: inset 0 230px 0 0 $PrimaryColor;
+        cursor: pointer;
+        color: whitesmoke;
+      }
+      &::before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: $PrimaryColor;
+        text-decoration: none;
+      }
+      &:hover::before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+        text-decoration: none;
+      }
+    }
+  }
+}

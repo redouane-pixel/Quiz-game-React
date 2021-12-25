@@ -1,0 +1,185 @@
+@keyframes slideinGood {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+@keyframes slideinBad {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+@keyframes slideinVeryBad {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+.restul {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  .resultBox {
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    .topBox {
+      width: 100%;
+      height: 20%;
+      background-color: $PrimaryColor;
+      color: white;
+      font-weight: 300;
+      font-size: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .bottomBox {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 35px;
+      font-weight: 300;
+      span {
+        margin-bottom: 20px;
+      }
+      .icon {
+        margin-bottom: 0px;
+        width: 140px;
+        width: 150px;
+      }
+    }
+    .leadingBox {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      margin-top: 15px;
+      .box {
+        width: 260px;
+        height: 60%;
+        border: 1px solid black;
+        margin-top: 18px;
+        .insideBox {
+          background-color: $PrimaryColor;
+          height: 100%;
+        }
+        .exellent {
+          width: 100%;
+          animation-name: slidein;
+          animation-duration: 3s;
+          animation-delay: 0s;
+          transition: ease;
+        }
+        .good {
+          width: 80%;
+          animation-name: slideinGood;
+          animation-duration: 3s;
+          animation-delay: 0s;
+          transition: ease;
+        }
+        .bad {
+          width: 40%;
+          animation-name: slideinBad;
+          animation-duration: 3s;
+          animation-delay: 0s;
+          transition: ease;
+        }
+        .veryBad {
+          width: 20%;
+          animation-name: slideinVeryBad;
+          animation-duration: 3s;
+          animation-delay: 0s;
+          transition: ease;
+        }
+        .sad {
+          width: 0%;
+        }
+      }
+      span {
+        font-size: 25px;
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+  }
+  .buttonsBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .btn-playAgain {
+      width: 100px;
+      height: 50px;
+      background-color: $PrimaryColor;
+      border-radius: 3px;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    .btn-edit {
+      width: 80px;
+      height: 35px;
+      background-color: white;
+      border: 1px solid $PrimaryColor;
+      border-radius: 3px;
+      color: $PrimaryColor;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: 1s ease-out;
+      box-shadow: inset 0 0 0 0 $PrimaryColor;
+      outline: none;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      &:hover {
+        // box-shadow: inset 0 230px 0 0 $PrimaryColor;
+        cursor: pointer;
+        color: whitesmoke;
+      }
+      &::before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: $PrimaryColor;
+        text-decoration: none;
+      }
+      &:hover::before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+        text-decoration: none;
+      }
+    }
+  }
+}

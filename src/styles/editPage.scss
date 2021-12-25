@@ -1,0 +1,212 @@
+.containerFirstpage2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0;
+    .testsContianer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      .container-qeustion {
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        margin: auto;
+        .title {
+          font-weight: bold;
+          font-size: 45px;
+          line-height: 50px;
+          color: $PrimaryColor;
+          margin-bottom: 10px;
+          margin-top: 30px;
+          padding-left: 10px;
+          border-left: 5px solid $PrimaryColor;
+        }
+        .qeustionBlock {
+          display: flex;
+          flex-direction: column;
+          margin-top: 0px;
+          .title-small {
+            font-weight: bold;
+            line-height: 35px;
+            font-size: 27px;
+            color: $PrimaryColor;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          .inputBlock {
+            display: flex;
+            margin: 0px;
+            padding-left: -75px;
+            .testBox {
+              margin-left: auto;
+              margin-top: 0px;
+              margin-bottom: 7px;
+              border-right: 5px solid white;
+              border-bottom-left-radius: 15px;
+              border-top-left-radius: 15px;
+              width: 65px;
+              height: 65px;
+            }
+            .defaulInput {
+              @include inputStyle;
+              width: 1200px;
+              height: 65px;
+
+              &::placeholder {
+                color: #b6b6b6;
+              }
+              &:focus {
+                border: none;
+                outline: none;
+                border-bottom: 5px solid $PrimaryColor;
+              }
+            }
+          }
+        }
+        .choicesBlock {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          .anwsersBlock {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            .title-small {
+              font-weight: bold;
+              line-height: 35px;
+              font-size: 27px;
+              color: $PrimaryColor;
+              margin-bottom: 10px;
+              margin-top: 10px;
+            }
+            .inputBlock {
+              display: flex;
+              margin: 0px;
+              padding-left: -75px;
+              margin-bottom: 10px;
+              .choiceInput {
+                @include inputStyle;
+                width: 100%;
+                height: 50px;
+              }
+              .num {
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 7px;
+                border-right: 5px solid white;
+                border-bottom-left-radius: 15px;
+                border-top-left-radius: 15px;
+                background-color: #e8e8e8;
+                width: 50px;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #666666;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+          .imgBlock {
+            display: flex;
+            flex-direction: column;
+            width: 43%;
+            .title-small {
+              font-weight: bold;
+              line-height: 35px;
+              font-size: 27px;
+              color: $PrimaryColor;
+              margin-bottom: 10px;
+              margin-top: 10px;
+            }
+            .inputBlock {
+              display: flex;
+              margin: 0px;
+              padding-left: -75px;
+              margin-bottom: 10px;
+              .ImageSrc {
+                @include inputStyle;
+                width: 100%;
+                height: 50px;
+              }
+              .num {
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 7px;
+                border-right: 5px solid white;
+                border-bottom-left-radius: 15px;
+                border-top-left-radius: 15px;
+                background-color: #e8e8e8;
+                width: 50px;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #666666;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+        .correctchoiceBlock {
+          display: flex;
+          flex-direction: column;
+          margin-top: -70px;
+          width: 100%;
+          .title-small {
+            font-weight: bold;
+            line-height: 35px;
+            font-size: 27px;
+            color: $PrimaryColor;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          .inputBlock {
+            display: flex;
+            margin: 0px;
+            padding-left: -75px;
+            margin-top: 0px;
+            .testBox {
+              margin-left: auto;
+              margin-top: 0px;
+              margin-bottom: 7px;
+              border-right: 5px solid white;
+              border-bottom-left-radius: 15px;
+              border-top-left-radius: 15px;
+              width: 50px;
+              height: 50px;
+            }
+            .defaulInput {
+              @include inputStyle;
+              height: 50px;
+              &::placeholder {
+                color: #b6b6b6;
+              }
+              &:focus {
+                border: none;
+                outline: none;
+                border-bottom: 5px solid $PrimaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
