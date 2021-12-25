@@ -2,6 +2,7 @@ import react,{useContext, useState} from 'react';
 import '../styles/App.scss';
 import QuestionSlider from './questionsSlider';
 import {QuestionsData} from './QeustionsDataHistory';
+// if you need to make an edti page you need to use context
 // import { QeustionsContext } from '../context';
 const HistoryPage = () => {
     // const [qeustionsData2, setQeustionsData2] = useContext(QeustionsContext);
