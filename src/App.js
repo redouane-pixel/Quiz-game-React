@@ -23,7 +23,6 @@ function App() {
     setDisplay("SecondPage")
   }, 6500);
 return (
-  // this is just for context
   // <QeustionsContext.Provider value={[qeustionsData, setQeustionsData]}>
      <Router>
     <Route path="/" exact>
