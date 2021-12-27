@@ -8,8 +8,13 @@ import GoodIcon from './pictures/goodIcon.png';
 import BadIcon from './pictures/badIcon.png';
 import VeryBadIcon from './pictures/veryBadIcon.png';
 import IsadIcon from './pictures/IsadIcon.png';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import ResultBox from './resultBox';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 const QuestionSlider = ({QuestionsData, type}) => {
   // if you put a array of images and it's deosn't working you can check a file:"sliderDataExample.jsx" and you will found it in prductPageComponent
   const length = QuestionsData.length   
